@@ -29,6 +29,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  height: auto;
+  width: 100%;
+}
+
 .main-header {
   flex: 0 1 auto;
 }
@@ -121,5 +126,30 @@ a {
   }
   .thumbnail-item+.thumbnail-item {
     margin-top: 20px;
+  }
+}
+
+@media all and (orientation: landscape) {
+  .main-content {
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .thumbnail-list {
+    flex-direction: column;
+    margin-left: 20px;
+    order: 0;
+  }
+
+  .thumbnail-item {
+    max-width: 260px;
+  }
+
+  .thumbnail-item+.thumbnail-item {
+    margin-top: 20px;
+  }
+
+  .detail-image {
+    width: 70%;
   }
 }
