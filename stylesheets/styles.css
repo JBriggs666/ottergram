@@ -1,12 +1,17 @@
 @font-face {
-font-family: 'lakeshore';
-font-style: normal;
-font-weight: normal;
-src: url('fonts/LAKESHOR-webfont.eot');
-src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'),
-     url('fonts/LAKESHOR-webfont.woff') format('woff'),
-     url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
-     url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+  font-family: 'airstreamregular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Airstream-webfont.eot');
+  src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/Airstream-webfont.woff') format('woff'),  url('fonts/Airstream-webfont.ttf') format('truetype'),  url('fonts/Airstream-webfont.svg#airstreamregular') format('svg');
+}
+
+@font-face {
+  font-family: 'lakeshore';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/LAKESHOR-webfont.eot');
+  src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/LAKESHOR-webfont.woff') format('woff'), url('fonts/LAKESHOR-webfont.ttf') format('truetype'), url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
 }
 
 html, body {
@@ -30,7 +35,6 @@ a {
 
 .logo-text {
   background: white;
-
   font-family: lakeshore;
   font-size: 37px;
   text-align: center;
@@ -59,7 +63,6 @@ a {
   order: 2;
   overflow-x: auto;
   padding: 0;
-
   white-space: nowrap;
 }
 
@@ -71,7 +74,6 @@ a {
 .thumbnail-title {
   background: rgb(96, 125, 139);
   color: rgb(202, 238, 255);
-
   display: block;
   font-size: 18px;
   margin: 0;
@@ -86,9 +88,20 @@ a {
 }
 
 .detail-image-frame {
+  position: relative;
   text-align: center;
 }
 
 .detail-image {
   width: 90%;
+}
+
+.detail-image-title {
+  bottom: -16px;
+  color: white;
+  font-family: airstreamregular;
+  font-size: 40px;
+  left: 4px;
+  position: absolute;
+  text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
 }
